@@ -1,11 +1,13 @@
 .contentContainer > div {
   /* width: 100%; */
-  max-width: 1200px;
+  max-width: 1000px;
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
   object-fit: contain;
-
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
 }
 .line{
   display: flex;
@@ -181,4 +183,23 @@
 }
 .banner {
   width: 2000PX;
+}
+
+.hoveredImg {
+  position: absolute;
+  /* display: absolute; */
+  left: -0px;
+  opacity: 0;
+  transition: all ease 0.7s;
+}
+
+.hoveredImg:hover {
+  opacity: 0.7;
+  /* transition: 1s ease-out; */
+}
+
+.selectedImg {
+  position: absolute;
+  left: -0px;
+  opacity: 1;
 }

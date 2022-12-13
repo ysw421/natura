@@ -19,8 +19,16 @@ import turtleHovered from '../AnimalIcons/turtleHovered.png';
 
 import Banner from './Banner/utils';
 
+import { useState } from 'react';
+
 
 function Contents(){
+    const [page, setPage] = useState(1);
+
+    const changePage = (page: number) => {
+        setPage(page);
+    };
+
     const Posts = [
         
         {
@@ -162,20 +170,26 @@ function Contents(){
     return (
         <div className = {ContentsStyle.contentContainer}>
             
-             <div className = {ContentsStyle.whiteSpace}></div>
+             {/* <div className = {ContentsStyle.whiteSpace}></div> */}
              <div className={ContentsStyle.banner}><Banner/></div>
              
              {/* <BannerSwipe/> */}
               {/* <div className = {ContentsStyle.whiteSpace}></div> */}
             <div className={ContentsStyle.popContainer}>
                 <div className={ContentsStyle.subtitle}>인기동물 둘러보기</div>
+                {/* 동물 종류별 선택 */}
                 <div className={ContentsStyle.contentOfcontent}>
                     {
-                        PopularAnimals.map((name) => (
+                        PopularAnimals.map((name, index) => (
                             <div className={ContentsStyle.contentBorder} key={name.species}>
-                                    <a href={name.link}>
+                                    {/* <a href={name.link}> */}
+                                    <a onClick={() => changePage(index)}>
+                                        {/* {page === index? <img src={name.imgHovered} alt = {name.species} /> : <img src={name.img} alt = {name.species}/>} */}
+                                        {/* {page === index? null : <img src={name.img} alt = {name.species}/>} */}
                                         <img src={name.img} alt = {name.species}/>
-                                        <img src={name.imgHovered} alt = {name.species} className={ContentsStyle.popAnimalsHovered}/>
+                                        <img src={name.imgHovered} alt = {name.species} className={`${ContentsStyle.hoveredImg} ${(page === index) && ContentsStyle.selectedImg}`} />
+                                        {/* <img src={name.imgHovered} alt = {name.species} className={ContentsStyle.popAnimalsHovered}/> */}
+
                                         {/* <img className={ContentsStyle.line} src={line} alt="line"/> */}
                                         <div className={ContentsStyle.Text}>{name.species}</div>
                                     </a>

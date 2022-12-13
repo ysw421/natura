@@ -6,23 +6,45 @@ import i1 from "./Intro.png";
 import i2 from "./Banner02.png";
 import i3 from "./Banner03.png";
 import Style from './Bannerstyle.module.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 export default function CarouselComponent() {
-    return (
-        <div>
-            <Carousel infiniteLoop useKeyboardArrows autoPlay showThumbs={false}  >
-                <div> 
-                    <img src={i1} className = {Style.imgBanner}/>
+    const settings = {
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true,
+    };
 
-                </div>
-                <div>
-                    <img src={i2} className ={Style.imgBanner}/>
-                </div>
-                <div>
-                    <img src={i3} className = {Style.imgBanner}/>
-                </div>
-            </Carousel>
+    return (
+        <div className={Style.banner}>
+            <Slider {...settings}>
+                <img src={i1} className = {Style.imgBanner}/>
+                <img src={i2} className ={Style.imgBanner}/>
+                <img src={i3} className = {Style.imgBanner}/>
+            </Slider>
         </div>
+        // <div>
+        //     <Carousel infiniteLoop useKeyboardArrows autoPlay showThumbs={false}  >
+        //         <div> 
+        //             <img src={i1} className = {Style.imgBanner}/>
+
+        //         </div>
+        //         <div>
+        //             <img src={i2} className ={Style.imgBanner}/>
+        //         </div>
+        //         <div>
+        //             <img src={i3} className = {Style.imgBanner}/>
+        //         </div>
+        //     </Carousel>
+        // </div>
     );
 }

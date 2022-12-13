@@ -33,9 +33,9 @@ function App() {
         {/* < img src={Banner} alt="banner" className={AppStyle.Banner} /> */}
           
         <Routes>
-          <Route path="/" element={<div><Header/><Contents/></div>} />
+          <Route path="/" element={<div style={{width: '1000px'}}><Header/><Contents/></div>} />
           <Route path='/donation' element={<Donation/>}/>
-          <Route path='/aboutus' element={<AboutUs/>}/>
+          <Route path='/aboutus' element={<div style={{width: '1000px'}}><AboutUs/></div>}/>
           <Route path='/allCategories' element={<AllCategories/>}/>
           <Route path='/adopt' element={<div><Header /><AdoptMain/></div>}/>
           <Route path='/community' element={<div><Header /><Community/></div>}/>

@@ -1,7 +1,8 @@
 .header {
-    width: 100%;
-    display: flex;
-    position: fixed;
+    /* width: 100%; */
+    /* display: flex; */
+    /* position: fixed; */
+    /* position: sticky; */
     flex-direction: column;
     align-items: center;
     overflow: hidden;
@@ -11,6 +12,14 @@
     width: 100%;
     top: 0; 
     z-index: 99;
+}
+
+.menuContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 101;
 }
 
 .headerHr {
@@ -66,6 +75,10 @@
 }
 .Icons {
     display: flex;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* margin-left: 30px; */
+    /* grid-template-columns: 100px 200px 100px; */
     align-items: center;
     justify-content: center;
     width: fit-content;
@@ -115,28 +128,42 @@
     white-space: nowrap	;
 }
 .menuIcon{
-    width: 25%;
-    padding-right: 5px;
+    /* width: 25%;
+    padding-right: 5px; */
+    width: 100%;
 }
 .Menubar {
-    margin-top: 5px;
+    /* margin-top: 5px; */
     display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 101;
     align-items: center;
     justify-content: space-evenly;
-    height: 37px;
+    height: 55px;
     width: 100%;
     white-space: nowrap;
     max-width: 1000px;
     padding: 0 32px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    /* box-shadow: 0px 5px 10px  rgba(128, 128, 128, 0.5); */
+    /* box-shadow: 0px 10px 10px -10px  rgb(128, 128, 128); */
 }
 .seeAllMenu{
-    display: flex;
+    /* display: flex;
     padding: 0;
     margin: 0;
-    margin-right: 50px;
+    margin-right: 50px; */
+    display: grid;
+    grid-template-columns: 25px 80px;
+    text-align: center;
+    align-items: center;
+    gap: 8px;
 }
 .menubarComponents{
-    margin: 0 30px;
+    /* margin: 0 30px; */
     font-weight: 800;
     font-size: 0.9rem;
     padding: 0 50px;
@@ -180,4 +207,27 @@
 .ChatIcon{
     width:30%;
     margin-left: 68%;
+}
+
+.naturaLogo {
+    display: grid;
+    grid-template-columns: 55px 126px;
+    text-align: center;
+}
+
+.dot {
+    /* position: absolute; */
+    /* top: 38px;
+    left: 75px; */
+    /* position: relative; */
+    /* top: 0; */
+    /* left: 50%; */
+    border-radius: 50%;
+    background-color: #048537;
+    width: 8px;
+    height: 8px;
+    margin: 0 auto;
+    /* display: inline-block; */
+    /* display: grid; */
+    /* transform: translate(50%, -50%); */
 }
