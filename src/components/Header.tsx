@@ -7,21 +7,27 @@ import InstaIcon from '../Logo/Insta.png';
 import NaverIcon from '../Logo/Naver.png';
 import ChatIcon from '../Logo/Chat.png';
 import MainLogo from '../Logo/MainLogo.png';
+import MainLogo2 from '../Logo/mainLogo2.png';
 import { Route, Link } from 'react-router-dom';
 import Search from './search/search';
 import shrink from './shrinkMenubar/shrink';
 import { useSpring, animated } from '@react-spring/web';
 import { useState } from 'react';
+import { atom, useAtom } from 'jotai';
+
+export const pageAtom = atom(-1);
 
 function Header() {
   //  if user's first visit, show the tutorial
   //  if user's not first visit, show the main page
   const [isFirstVisit, setIsFirstVisit] = useState(true);
+  const [selectedPage, setSelectedPage] = useAtom(pageAtom);
   const [onClicked, setOnClicked] = useState(false);
   const [hovered1, setHovered1] = useState(false);
   const [hovered2, setHovered2] = useState(false);
   const [hovered3, setHovered3] = useState(false);
   const [hovered4, setHovered4] = useState(false);
+  const [isRollOpened, setIsRollOpened] = useState(false);
 
   // confirm user's first visi
 
@@ -31,24 +37,30 @@ function Header() {
     config: { duration: 300 },
   });
 
+  const roll = useSpring({
+    from: { height: isRollOpened ? '0px' : '204px' },
+    to: { height: isRollOpened ? '204px' : '0px' },
+    config: { duration: 300 },
+  });
+
   const hover1 = useSpring({
-    from: { opacity: hovered1 ? 0 : 1 },
-    to: { opacity: hovered1 ? 1 : 0 },
+    from: { opacity: hovered1 || selectedPage === 0 ? 0 : 1 },
+    to: { opacity: hovered1 || selectedPage === 0 ? 1 : 0 },
     config: { duration: 300 },
   });
   const hover2 = useSpring({
-    from: { opacity: hovered2 ? 0 : 1 },
-    to: { opacity: hovered2 ? 1 : 0 },
+    from: { opacity: hovered2 || selectedPage === 1 ? 0 : 1 },
+    to: { opacity: hovered2 || selectedPage === 1 ? 1 : 0 },
     config: { duration: 300 },
   });
   const hover3 = useSpring({
-    from: { opacity: hovered3 ? 0 : 1 },
-    to: { opacity: hovered3 ? 1 : 0 },
+    from: { opacity: hovered3 || selectedPage === 2 ? 0 : 1 },
+    to: { opacity: hovered3 || selectedPage === 2 ? 1 : 0 },
     config: { duration: 300 },
   });
   const hover4 = useSpring({
-    from: { opacity: hovered4 ? 0 : 1 },
-    to: { opacity: hovered4 ? 1 : 0 },
+    from: { opacity: hovered4 || selectedPage === 3 ? 0 : 1 },
+    to: { opacity: hovered4 || selectedPage === 3 ? 1 : 0 },
     config: { duration: 300 },
   });
 
@@ -68,7 +80,8 @@ function Header() {
                 <img src={MainLogo} alt="MainLogo" className={HeaderStyle.MainLogo} />
               </animated.div>
               {/* NATURA */}
-              <span style={{ marginTop: '7px' }}>NATURA</span>
+              <img src={MainLogo2} alt="MainLogo" className={HeaderStyle.MainLogo2} />
+              {/* <span style={{ marginTop: '7px' }}>NATURA</span> */}
             </Link>
           </div>
           <div className={HeaderStyle.search}>
@@ -120,8 +133,7 @@ function Header() {
 
       <div className={HeaderStyle.menuContainer}>
         <nav className={HeaderStyle.Menubar}>
-          <div style={{ width: '20px' }}></div>
-          <Link to="./AllCategories">
+          <Link to="/AllCategories">
             <div className={HeaderStyle.menubarComponents}>
               <div className={HeaderStyle.seeAllMenu}>
                 <img src={menuIcon} alt="menuIcon" className={HeaderStyle.menuIcon} />
@@ -166,6 +178,21 @@ function Header() {
             <animated.div style={hover4} className={HeaderStyle.dot} />
           </Link>
         </nav>
+        {/* <animated.div style={roll} className={HeaderStyle.rollBar}>
+          <div className={HeaderStyle.rollContainer}>
+            <div style={{ width: '100%', height: '100%', backgroundColor: '#13B861' }}></div>
+            <div className={HeaderStyle.rollBox}>
+              조류<br></br>파충류<br></br>설치류<br></br>양서류<br></br>곤충류<br></br>포유류<br></br>절지동물
+              <br></br>
+              기타
+            </div>
+            <div className={HeaderStyle.rollBox}></div>
+            <div className={HeaderStyle.rollBox}>
+              모금 참여<br></br>함께하는 파트너
+            </div>
+            <div className={HeaderStyle.rollBox}></div>
+          </div>
+        </animated.div> */}
       </div>
     </>
   );

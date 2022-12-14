@@ -60,7 +60,7 @@ export default function Search() {
         ) : (
           state.list.map((post) => {
             return (
-              <Link to="./adopt/kokatoo">
+              <Link to="/adopt/kokatoo">
                 <li key={post.title} style={{ width: '448px', textAlign: 'left' }}>
                   <span style={{ width: '100%', textAlign: 'left' }}>{post.title}</span>
                 </li>

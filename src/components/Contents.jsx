@@ -42,10 +42,11 @@ function Contents() {
     setPage(page);
   };
 
-  console.log(isMorePop);
+  // console.log(isMorePop);
   return (
     <div className={ContentsStyle.contentContainer} style={{ paddingRight: '5%' }}>
       {/* <div className = {ContentsStyle.whiteSpace}></div> */}
+      {/* <div style={{ width: '100%', height: '50px' }}></div> */}
       <div className={ContentsStyle.banner}>
         <Banner />
       </div>

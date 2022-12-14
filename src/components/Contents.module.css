@@ -94,6 +94,7 @@
   flex-direction: row;
   text-align: center;
   width: 100%;
+  margin-left: -15px;
 }
 .shopsContainer {
   width: 29%;

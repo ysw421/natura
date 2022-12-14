@@ -13,10 +13,44 @@ import Chat from './chat/chatMain';
 import Kokatoo from './adoptionPosts/kokatoo';
 import NaturaHouse from './adoptionPosts/NaturaHouse';
 // import {RemoveScroll} from 'react-remove-scroll';
+import { atom, useAtom } from 'jotai';
+import { pageAtom } from './components/Header';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+const Page_1 = function Page_1() {
+  const [selectedPage, setSelectedPage] = useAtom(pageAtom);
+  setSelectedPage(-1);
+  return <></>;
+};
+
+const Page0 = function Page0() {
+  const [selectedPage, setSelectedPage] = useAtom(pageAtom);
+  setSelectedPage(0);
+  return <></>;
+};
+
+const Page1 = function Page1() {
+  const [selectedPage, setSelectedPage] = useAtom(pageAtom);
+  setSelectedPage(1);
+  return <></>;
+};
+
+const Page2 = function Page2() {
+  const [selectedPage, setSelectedPage] = useAtom(pageAtom);
+  setSelectedPage(2);
+  return <></>;
+};
+
+const Page3 = function Page3() {
+  const [selectedPage, setSelectedPage] = useAtom(pageAtom);
+  setSelectedPage(3);
+  return <></>;
+};
+
 function App() {
+  const [selectedPage, setSelectedPage] = useAtom(pageAtom);
+
   return (
     // <RemoveScroll>
     <BrowserRouter>
@@ -35,6 +69,7 @@ function App() {
             path="/"
             element={
               <div style={{ width: '1000px' }}>
+                <Page_1 />
                 <Header />
                 <Contents />
               </div>
@@ -44,6 +79,7 @@ function App() {
             path="/donation"
             element={
               <div style={{ width: '1000px' }}>
+                <Page2 />
                 <Donation />
               </div>
             }
@@ -52,15 +88,25 @@ function App() {
             path="/aboutus"
             element={
               <div style={{ width: '1000px' }}>
+                <Page3 />
                 <AboutUs />
               </div>
             }
           />
-          <Route path="/allCategories" element={<AllCategories />} />
+          <Route
+            path="/allCategories"
+            element={
+              <div style={{ width: '1000px' }}>
+                <Page_1 />
+                <AllCategories />
+              </div>
+            }
+          />
           <Route
             path="/adopt"
             element={
               <div style={{ width: '1000px' }}>
+                <Page0 />
                 <Header />
                 <AdoptMain />
               </div>
@@ -70,18 +116,29 @@ function App() {
             path="/community"
             element={
               <div style={{ width: '1000px' }}>
+                <Page1 />
                 <Header />
                 <Community />
               </div>
             }
           />
           <Route path="/chat" element={<Chat />} />
-          <Route path="/adopt/kokatoo" element={<Kokatoo />} />
+          <Route
+            path="/adopt/kokatoo"
+            element={
+              <div style={{ width: '1000px' }}>
+                <Page0 />
+                <Header />
+                <Kokatoo />
+              </div>
+            }
+          />
           {/* <Route path='/allCategories' />/ */}
           <Route
             path="/adopt/kokatoo/NaturaHouse"
             element={
               <div style={{ width: '1000px' }}>
+                <Page0 />
                 <Header />
                 <NaturaHouse />
               </div>
@@ -91,6 +148,7 @@ function App() {
             path="/adopt/kokatoo/NotYet"
             element={
               <div style={{ width: '1000px' }}>
+                <Page0 />
                 <Header />
                 <NaturaHouse />
               </div>
