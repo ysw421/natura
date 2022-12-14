@@ -1,49 +1,101 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 import AppStyle from './App.module.css';
 
 import Header from './components/Header';
 import Contents from './components/Contents';
-import Donation  from './donations/donationMain';
+import Donation from './donations/donationMain';
 import AboutUs from './aboutus/AboutusMain';
 import AllCategories from './allCategories/categoryMain';
 import AdoptMain from './adopt/adopMain';
 import Community from './community/communityMain';
 import Chat from './chat/chatMain';
 import Kokatoo from './adoptionPosts/kokatoo';
-import NaturaHouse from './adoptionPosts/NaturaHouse'
+import NaturaHouse from './adoptionPosts/NaturaHouse';
 // import {RemoveScroll} from 'react-remove-scroll';
 
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
-
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    // <RemoveScroll>  
+    // <RemoveScroll>
     <BrowserRouter>
       <div className={AppStyle.wrapper}>
         {/* dont display header when page is tutorial */}
         {/* <Routes> */}
-          {/* <Route path="/" element={<Header />} /> */}
-          {/* <Route path="/tutorial" element={<></>} /> */}
+        {/* <Route path="/" element={<Header />} /> */}
+        {/* <Route path="/tutorial" element={<></>} /> */}
         {/* </Routes> */}
-        
+
         {/* <Header/> */}
         {/* < img src={Banner} alt="banner" className={AppStyle.Banner} /> */}
-          
+
         <Routes>
-          <Route path="/" element={<div style={{width: '1000px'}}><Header/><Contents/></div>} />
-          <Route path='/donation' element={<Donation/>}/>
-          <Route path='/aboutus' element={<div style={{width: '1000px'}}><AboutUs/></div>}/>
-          <Route path='/allCategories' element={<AllCategories/>}/>
-          <Route path='/adopt' element={<div><Header /><AdoptMain/></div>}/>
-          <Route path='/community' element={<div><Header /><Community/></div>}/>
-          <Route path='/chat' element={<Chat/>}/>
-          <Route path='/adopt/kokatoo' element={<Kokatoo/>}/>
+          <Route
+            path="/"
+            element={
+              <div style={{ width: '1000px' }}>
+                <Header />
+                <Contents />
+              </div>
+            }
+          />
+          <Route
+            path="/donation"
+            element={
+              <div style={{ width: '1000px' }}>
+                <Donation />
+              </div>
+            }
+          />
+          <Route
+            path="/aboutus"
+            element={
+              <div style={{ width: '1000px' }}>
+                <AboutUs />
+              </div>
+            }
+          />
+          <Route path="/allCategories" element={<AllCategories />} />
+          <Route
+            path="/adopt"
+            element={
+              <div style={{ width: '1000px' }}>
+                <Header />
+                <AdoptMain />
+              </div>
+            }
+          />
+          <Route
+            path="/community"
+            element={
+              <div style={{ width: '1000px' }}>
+                <Header />
+                <Community />
+              </div>
+            }
+          />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/adopt/kokatoo" element={<Kokatoo />} />
           {/* <Route path='/allCategories' />/ */}
-          <Route path='/adopt/kokatoo/NaturaHouse' element={<div><Header /><NaturaHouse/></div>} />
-          <Route path='/adopt/kokatoo/NotYet' element={<div><Header /><NaturaHouse/></div>} />
+          <Route
+            path="/adopt/kokatoo/NaturaHouse"
+            element={
+              <div style={{ width: '1000px' }}>
+                <Header />
+                <NaturaHouse />
+              </div>
+            }
+          />
+          <Route
+            path="/adopt/kokatoo/NotYet"
+            element={
+              <div style={{ width: '1000px' }}>
+                <Header />
+                <NaturaHouse />
+              </div>
+            }
+          />
           {/* <Route path ='/login' element={<div><Login/></div>}/> */}
           {/* <Route path='/tutorial' element={<Tutorial/>} /> */}
           {/* <Route path='/tutorial/result' element={<SearchResult/>} /> */}
@@ -51,11 +103,10 @@ function App() {
           {/* <Route path='/tutorial/result/NaturaHouse/TutorialChat' element={<TutorialChat/>} /> */}
           {/* <Route path='/tutorial/result/NaturaHouse/TutorialChat/ChatBot' element={<TutorialChatBot/>} /> */}
         </Routes>
-
       </div>
     </BrowserRouter>
-    // <RemoveScroll/>  
-  )
+    // <RemoveScroll/>
+  );
 }
 
-export default App
+export default App;

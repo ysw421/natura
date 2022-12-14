@@ -5,16 +5,17 @@ import AboutUsImg from './AboutUsImg/AboutUs.png';
 import title from './AboutUsImg/title.png';
 
 function AboutusMain() {
-    return (
-        <div>
-            <div style={{height: '15000px'}}>
-                <Header/>
-                <img src={AboutUsImg} alt="AboutUsImg" className={AboutUsMainStyle.AboutUsImg} />
-                {/* <div className={AboutUsMainStyle.titleContainer}><img src={title} alt="title" className={AboutUsMainStyle.title} /></div> */}
-                <img src={title} alt="title" className={AboutUsMainStyle.title} />
-            </div>
-        </div>
-    )
+  return (
+    <div>
+      <div style={{ height: '15000px' }}>
+        {/* <div className={AboutUsMainStyle.whiteMenuBar}></div> */}
+        <Header />
+        <img src={AboutUsImg} alt="AboutUsImg" className={AboutUsMainStyle.AboutUsImg} />
+        {/* <div className={AboutUsMainStyle.titleContainer}><img src={title} alt="title" className={AboutUsMainStyle.title} /></div> */}
+        <img src={title} alt="title" className={AboutUsMainStyle.title} />
+      </div>
+    </div>
+  );
 }
 
-export default AboutusMain
+export default AboutusMain;

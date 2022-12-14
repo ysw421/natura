@@ -5,18 +5,17 @@
   /* justify-content: space-between; */
   align-items: center;
   object-fit: contain;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  /* margin-right: 5%; */
   width: 90%;
 }
-.line{
+.line {
   display: flex;
 }
 
-
 .contentBorder > img {
-  margin: 10px; 
-  margin-bottom: 0; 
+  margin: 10px;
+  margin-bottom: 0;
   /* display: inline; */
 }
 
@@ -28,26 +27,24 @@
   margin-right: 100px;
   /* justify-content: space-between; */
 }
-.Text{
-    font-size: 0.8rem;
-    text-align: center;
-    color: rgb(83, 83, 83);
+.Text {
+  font-size: 0.8rem;
+  text-align: center;
+  color: rgb(83, 83, 83);
 }
 
 .contentBorder > a > img {
-    object-fit: contain;
-    height: 70px;
+  object-fit: contain;
+  height: 70px;
 }
 
-
-.shops{
+.shops {
   width: 100%;
-  max-width: 00px;
+  /* max-width: 00px; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   object-fit: contain;
-
 }
 .shopImg {
   width: 85%;
@@ -63,31 +60,31 @@
   justify-content: center;
   align-items: center;
   object-fit: contain;
-
 }
 .moreShops {
   justify-content: end;
   margin: 20px 0;
+  /* margin-right: 10%; */
 }
-.popContainer{
+.popContainer {
   flex-wrap: wrap;
 }
-.popAnimalsHovered{
+.popAnimalsHovered {
   position: absolute;
   top: 0;
   left: 0;
   display: none;
 }
-.contentBorder > a{
+.contentBorder > a {
   position: absolute;
   float: left;
 }
-.popAnimalsHovered > img{
+.popAnimalsHovered > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.popAnimalsHovered > a{
+.popAnimalsHovered > a {
   position: absolute;
   /* float: center; */
 }
@@ -99,18 +96,17 @@
   width: 100%;
 }
 .shopsContainer {
-  width:29%;
+  width: 29%;
   max-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   flex-wrap: nowrap;
-
 }
-.virline{
+.virline {
   width: 1px;
-  height:100%;
+  height: 100%;
   background-color: black;
   margin: 0 10px;
 }
@@ -120,7 +116,7 @@
   font-size: 18px;
   /* display: flex; */
   /* justify-content:flex-start; */
-  margin:10px 5px;
+  margin: 10px 5px;
 }
 .whiteSpace {
   /* borderbox blank */
@@ -135,15 +131,15 @@
   font-size: 0.8rem;
   display: flex;
 }
-.shopInfo >div:nth-child(1) {
+.shopInfo > div:nth-child(1) {
   margin-bottom: 5px;
 }
-.shopInfo >div:nth-child(2) {
+.shopInfo > div:nth-child(2) {
   max-width: 85%;
 }
 
-.shopInfo{
-  margin: 0 7px
+.shopInfo {
+  margin: 0 7px;
 }
 .shops > div {
   display: flex;
@@ -152,6 +148,7 @@
   font-weight: 700;
   font-size: 0.8rem;
   color: gray;
+  margin-right: 10%;
 }
 .moreShops > a:hover {
   color: black;
@@ -159,30 +156,33 @@
 }
 .line {
   margin: 0;
+  margin-left: 3%;
   height: 0;
   width: 100%;
-  max-width: 2000px;
+  /* max-width: 2000px; */
 }
-.subT{
+.subT {
   font-size: 1.3rem;
   font-weight: 900;
   margin: 0 0 30px 0;
 }
-.whiteSpace2{
+.whiteSpace2 {
   width: 100%;
   height: 25px;
   background-color: white;
   border: none;
 }
 /* subtitle extend subT add padding */
-.subtitle{
+.subtitle {
   font-size: 1.3rem;
   font-weight: 900;
   margin: 0 0 30px 0;
   padding-top: 90px;
 }
 .banner {
-  width: 2000PX;
+  /* width: 2000px; */
+  width: 100%;
+  padding-right: 5%;
 }
 
 .hoveredImg {
