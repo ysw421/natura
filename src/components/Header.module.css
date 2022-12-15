@@ -1,180 +1,191 @@
 .header {
-    /* width: 100%; */
-    /* display: flex; */
-    /* position: fixed; */
-    /* position: sticky; */
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-    padding: 0px 10px;   
-    transition: 0.4s; 
-    width: 100%;
-    top: 0; 
-    z-index: 99;
+  /* width: 100%; */
+  /* display: flex; */
+  /* position: fixed; */
+  /* position: sticky; */
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  padding: 0px 10px;
+  transition: 0.4s;
+  width: 100%;
+  top: 0;
+  z-index: 99;
 }
 
 .menuContainer {
-    padding-left: 10px;
-    padding-right: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 101;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 101;
 }
 
 .headerHr {
-    margin: 0;
-    height: 0;
-    width: 100%;
-    max-width: 2000px;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+  margin: 0;
+  height: 0;
+  width: 100%;
+  max-width: 2000px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 .headerHrShadow {
-    border:none;
- 	width: 100%;
-	height: 40px;
-	margin-top: 0;
-	box-shadow: 0 10px 10px -10px rgb(109, 109, 109);
-    margin: -30px auto 10px; 
-  
+  border: none;
+  width: 100%;
+  height: 40px;
+  margin-top: 0;
+  box-shadow: 0 10px 10px -10px rgb(109, 109, 109);
+  margin: -30px auto 10px;
 }
 .search {
-    margin: 0 20px;
-    max-width: 900px;
-    flex: 1;
-    display: flex;
-    align-items: center;
-}    
+  /* margin: 0 20px; */
+  max-width: 900px;
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -15px;
+}
 
 .headerSearch {
-    width: 100%;
-    padding: 35px 30px 20px 0px;
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    /* align-items: flex-start; */
-    
+  /* width: 100%;
+  padding: 35px 30px 20px 0px;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between; */
+  /* align-items: flex-start; */
+  width: 100%;
+  padding: 35px 13% 20px 0px;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .MainLogo {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
-.linkToMain{
-    /* print everything in one line */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
+.linkToMain {
+  /* print everything in one line */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
 }
 .Logo {
-    padding: 7px;
-    font-size: 1.7rem;
-    font-weight: 900;
+  padding: 7px;
+  font-size: 1.7rem;
+  font-weight: 900;
 }
 .Icons {
-    display: flex;
-    /* display: grid; */
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* margin-left: 30px; */
-    /* grid-template-columns: 100px 200px 100px; */
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
+  /* display: flex; */
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* margin-left: 30px; */
+  grid-template-columns: 40px 40px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  /* margin-right: 3px; */
+  /* margin-left: 160px; */
+  gap: 10px;
 }
 
 .HeaderUtils {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 45px;    
-    max-width: 1000px;
-    width: 100%;
-    padding: 0 30px;
-    overflow: hidden;
-    transition: 0.4s; 
-    width: 100%;
-    z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 30px;
+  overflow: hidden;
+  transition: 0.4s;
+  width: 100%;
+  z-index: 99;
 }
 /* space between div children of HeaderUtils */
 .HeaderUtils > * {
-    margin: 0 40px;
+  margin: 0 40px;
 }
 .Menus {
-    display: flex;
-    
+  display: flex;
 }
 .Menus > a {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 .Links {
-    display: flex;
+  display: flex;
 }
 .Links > a {
-    margin: 0 5px;
-    font-size: 0.8rem;
+  margin: 0 5px;
+  font-size: 0.8rem;
 }
-.Menus{
-    max-width: 1000px;
+.Menus {
+  max-width: 1000px;
 }
 .Menus > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%; 
-    width: 100%;
-    /* padding: 0 95px; */
-    white-space: nowrap	;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  /* padding: 0 95px; */
+  white-space: nowrap;
 }
-.menuIcon{
-    /* width: 25%;
+.menuIcon {
+  /* width: 25%;
     padding-right: 5px; */
-    width: 100%;
+  width: 100%;
 }
 .Menubar {
-    /* margin-top: 5px; */
-    display: flex;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 101;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 55px;
-    width: 100%;
-    white-space: nowrap;
-    max-width: 1000px;
-    padding: 0 32px;
-    border-bottom: 1px solid rgb(230, 230, 230);
-    /* box-shadow: 0px 5px 10px  rgba(128, 128, 128, 0.5); */
-    /* box-shadow: 0px 10px 10px -10px  rgb(128, 128, 128); */
+  /* margin-top: 5px; */
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 101;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 55px;
+  width: 100%;
+  white-space: nowrap;
+  max-width: 1000px;
+  /* padding: 0 32px; */
+  /* padding-right: 30px; */
+  border-bottom: 1px solid rgb(230, 230, 230);
+  /* box-shadow: 0px 5px 10px  rgba(128, 128, 128, 0.5); */
+  /* box-shadow: 0px 10px 10px -10px  rgb(128, 128, 128); */
 }
-.seeAllMenu{
-    /* display: flex;
+.seeAllMenu {
+  /* display: flex;
     padding: 0;
     margin: 0;
     margin-right: 50px; */
-    display: grid;
-    grid-template-columns: 25px 80px;
-    text-align: center;
-    align-items: center;
-    gap: 8px;
+  display: grid;
+  grid-template-columns: 25px 80px;
+  text-align: center;
+  align-items: center;
+  gap: 8px;
 }
-.menubarComponents{
-    /* margin: 0 30px; */
-    font-weight: 800;
-    font-size: 0.9rem;
-    padding: 0 50px;
+.menubarComponents {
+  /* margin: 0 30px; */
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 0 50px;
 }
-.logo{
-    width: 32%;
-    /* height: 35%; */
-    margin-left: 145%;
+.logo {
+  width: 100%;
+  /* height: 35%; */
+  /* margin-left: 145%; */
 }
 
-.Menubar > div:hover:before {
+/* .Menubar > div:hover:before {
     content:"";
     position:absolute;
     top:-16px;
@@ -183,51 +194,103 @@
     height:16px;
     border-radius:100%;
     left:calc(51% - 9px);
- }
- .Menubar > div {
-    width: fit-content;
- }
+ } */
+.Menubar > div {
+  width: fit-content;
+}
 
-.Menus > a> img{
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
-    display: flex;
+.Menus > a > img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  display: flex;
 }
 /* space berween chilren of Menus */
 .Menus > a {
-    margin: 0 1px;
+  margin: 0 1px;
 }
 /* 5th div of .Menubar */
-.Menubar > div:nth-child(5) > Link{
-    color: gray;
-    padding: none;
+.Menubar > div:nth-child(5) > Link {
+  color: gray;
+  padding: none;
 }
 
-.ChatIcon{
-    width:30%;
-    margin-left: 68%;
+.ChatIcon {
+  width: 100%;
+  /* margin-left: 68%; */
 }
 
 .naturaLogo {
-    display: grid;
-    grid-template-columns: 55px 126px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: 55px 126px;
+  text-align: center;
+  width: 100%;
+  align-items: center;
 }
 
 .dot {
-    /* position: absolute; */
-    /* top: 38px;
+  /* position: absolute; */
+  /* top: 38px;
     left: 75px; */
-    /* position: relative; */
-    /* top: 0; */
-    /* left: 50%; */
-    border-radius: 50%;
-    background-color: #048537;
-    width: 8px;
-    height: 8px;
-    margin: 0 auto;
-    /* display: inline-block; */
-    /* display: grid; */
-    /* transform: translate(50%, -50%); */
+  /* position: relative; */
+  /* top: 0; */
+  /* left: 50%; */
+  border-radius: 50%;
+  background-color: #048537;
+  width: 8px;
+  height: 8px;
+  margin: 0 auto;
+  /* display: inline-block; */
+  /* display: grid; */
+  /* transform: translate(50%, -50%); */
+}
+
+.whiteMenuBar {
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  height: 55px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.MainLogo2 {
+  width: 130px;
+}
+
+.rollBar {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-bottom: #d9d9d9 solid 1px;
+  position: absolute;
+  padding-left: 7%;
+  padding-right: 7%;
+  overflow-y: hidden;
+}
+
+.rollContainer {
+  width: 100%;
+  height: 100%;
+  /* background-color: #048537; */
+  display: grid;
+  grid-template-columns: 185px 175px 175px 175px 150px;
+}
+
+.rollBox {
+  width: '100%';
+  height: '100%';
+  /* border-left: #d9d9d9 solid 1px; */
+  border-right: #d9d9d9 solid 1px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 0.8rem;
+  line-height: 180%;
+}
+
+.hideMenuClass {
+  /* display: ; */
+  position: static;
 }

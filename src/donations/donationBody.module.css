@@ -1,91 +1,101 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
-.preview > div{
-    display: flex;
-    max-width: 700px;
-    width:100%;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 10px;
-    /* object-fit: contain; */
-    flex-wrap: wrap;
+.preview > div {
+  display: flex;
+  max-width: 700px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 10px;
+  /* object-fit: contain; */
+  flex-wrap: wrap;
 }
 .contentBorder {
-    object-fit: contain;
-    /* width: ; */
-    max-width: 1000px;
-    align-items: center;
-    flex-wrap: nowrap;
-    display: flex;
+  object-fit: contain;
+  /* width: ; */
+  max-width: 1000px;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
 }
 .contentBorder > a > img {
-    object-fit: contain;
-    width: 100%;
-    /* height: 150px; */
-    display: flex;
-    justify-content:space-around;
-    padding: 5px;
-    margin-top: 10px;
+  object-fit: contain;
+  width: 100%;
+  /* height: 150px; */
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  margin-top: 10px;
 }
-.contentBorder > a{
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width: 200px;
-    /* align-items: left; */
-    
+.contentBorder > a {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 200px;
+  /* align-items: left; */
 }
 .content {
-    width:100%;
-    white-space: initial;
-
+  width: 100%;
+  white-space: initial;
 }
 .imgTitle {
-    font-size: 13px;
-    font-weight: 700;
+  font-size: 13px;
+  font-weight: 700;
 }
 .imgSource {
-    font-size: 10px;
+  font-size: 10px;
 }
 .imgPercent {
-    font-size: 11px;
-    color: #13B861;
-    float: inline-start;
-    /* margin: 2px; */
+  font-size: 11px;
+  color: #13b861;
+  float: inline-start;
+  /* margin: 2px; */
 }
 .imgCurrent {
-    font-size:11px;
-    float: inline-end;
+  font-size: 11px;
+  float: inline-end;
 }
 .preview > div > div {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 .graphBar {
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 5px;
-    
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
 }
-.graph{
-    width: 55%;
-    height: 5px;
-    background-color: #E5E5E5;
-    border-radius: 5px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 5px;
+.graph {
+  /* width: 55%; */
+  width: 100px;
+  height: 5px;
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px;
+  position: absolute;
+  z-index: -1;
 }
-.whiteSpace{
-    width: 100%;
-    height:200px;
-    background-color: white;
+.graph2 {
+  /* width: 55%; */
+  height: 5px;
+  background-color: #048537;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px;
+  /* position: absolute; */
 }
- 
+.whiteSpace {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
