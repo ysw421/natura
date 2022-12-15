@@ -1,0 +1,41 @@
+{
+  "trailingSlash": "always",
+  "routes": [
+    {
+      "route": "/donation/",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/aboutus/",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/allCategories/",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/adopt/",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/community/",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/chat/",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/adopt/kokatoo",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/adopt/kokatoo/NaturaHouse",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/adopt/kokatoo/NotYet",
+      "rewrite": "/index.html"
+    },
+  ]
+}
