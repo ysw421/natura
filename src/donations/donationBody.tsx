@@ -32,7 +32,6 @@ function DonationBody() {
                       {/* <animated.div className={DonationBodyStyle.graph2} style={graphPercent}></animated.div> */}
                     </div>
                     {/* </div> */}
-
                     <span className={DonationBodyStyle.imgCurrent}>{item.current}원</span>
                   </div>
                 </div>

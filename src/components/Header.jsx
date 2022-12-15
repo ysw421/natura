@@ -17,7 +17,7 @@ import { atom, useAtom } from 'jotai';
 
 export const pageAtom = atom(-1);
 
-function Header() {
+function Header(prop) {
   //  if user's first visit, show the tutorial
   //  if user's not first visit, show the main page
   const [isFirstVisit, setIsFirstVisit] = useState(true);
@@ -67,8 +67,8 @@ function Header() {
   return (
     // <BrowserRouter>/
     <>
-      <div className={HeaderStyle.whiteMenuBar}></div>
-      <header className={HeaderStyle.header}>
+      <div className={`${HeaderStyle.whiteMenuBar} ${prop.hideMenu === 'hide' && HeaderStyle.hideMenuClass}`}></div>
+      <header className={`${HeaderStyle.header}`}>
         <div className={HeaderStyle.headerSearch}>
           {/* <Link to='/' className={HeaderStyle.linktoMain}> */}
           {/* <animated.div style={props} onClick={() => setOnClicked(!onClicked)}>
@@ -131,7 +131,7 @@ function Header() {
         <hr className={HeaderStyle.headerHr} />
       </header>
 
-      <div className={HeaderStyle.menuContainer}>
+      <div className={`${HeaderStyle.menuContainer} ${prop.hideMenu === 'hide' && HeaderStyle.hideMenuClass}`}>
         <nav className={HeaderStyle.Menubar}>
           <Link to="/AllCategories">
             <div className={HeaderStyle.menubarComponents}>

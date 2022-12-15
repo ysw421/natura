@@ -289,3 +289,8 @@
   font-size: 0.8rem;
   line-height: 180%;
 }
+
+.hideMenuClass {
+  /* display: ; */
+  position: static;
+}

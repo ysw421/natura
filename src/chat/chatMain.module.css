@@ -1,0 +1,354 @@
+.chatMain {
+  padding-left: 88px;
+  padding-right: 81px;
+}
+
+.logoContainer {
+  display: grid;
+  grid-template-columns: 77px 176px;
+  align-items: center;
+  gap: 7px;
+}
+
+#logo1 {
+  width: 100%;
+}
+
+#logo2 {
+  width: 100%;
+}
+
+#topHr {
+  position: relative;
+  background-color: #e9e9e9;
+  width: calc(100% + 149px);
+  left: -78px;
+  height: 3px;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 2px 70px 4px 280px 3px 472px 2px;
+}
+
+.mainHr {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(193, 191, 191);
+}
+
+#leftBar {
+  width: 100%;
+  height: 600px;
+  background-color: #e9e9e9;
+  padding: 10px;
+}
+
+#leftHr {
+  background-color: #d0d0d0;
+  width: 100%;
+  height: 100%;
+}
+
+#profile1 {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 13px;
+  border-radius: 50%;
+  border: 4px solid #04b800;
+  transition: all 0.2s ease-in-out;
+  /* margin: 2px; */
+}
+
+#profile1:hover {
+  width: 48px;
+  margin-top: 1px;
+  margin-bottom: 14px;
+  transition: all 0.2s ease-in-out;
+  /* margin: 2px; */
+}
+
+#profile2 {
+  width: 46px;
+  margin-bottom: 13px;
+  transition: all 0.2s ease-in-out;
+  /* margin: 6px; */
+}
+
+#profile2:hover {
+  width: 44px;
+  margin-top: 1px;
+  margin-bottom: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+#profile3 {
+  width: 46px;
+  margin-bottom: 13px;
+  transition: all 0.2s ease-in-out;
+  /* margin: 6px; */
+}
+
+#profile3:hover {
+  width: 44px;
+  margin-top: 1px;
+  margin-bottom: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+#sideBar {
+  width: 100%;
+  height: 100%;
+  /* padding: 10px; */
+}
+
+#leftHr2 {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f3f4;
+}
+
+#title {
+  width: 100%;
+  height: fit-content;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.sideBarHr {
+  width: 100%;
+  height: 3px;
+  background-color: #e9e9e9;
+}
+
+#massageContainer {
+  width: 100%;
+  height: fit-content;
+  text-align: right;
+  padding: 4px 13px;
+  text-align: left;
+  padding-left: 150px;
+  color: #7b7b7b;
+}
+
+#massage {
+  font-size: 0.3rem;
+  width: fit-content;
+}
+
+#massageContainer2 {
+  display: grid;
+  grid-template-columns: 91px 16px;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+}
+
+#checked {
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+
+#checked:hover {
+  background-color: aquamarine;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+
+.chatContainer {
+  width: 100%;
+  height: 100px;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 65px 135px;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+#chat {
+  width: 100%;
+}
+
+#chatTitle {
+  margin: 0;
+  font-weight: 1000;
+  font-size: 1.2rem;
+  margin-bottom: 3px;
+}
+
+#chatSub {
+  margin: 0;
+  font-size: 0.6rem;
+  color: #7b7b7b;
+  width: fit-content;
+  height: 47px;
+  /* width: 85px; */
+}
+
+#question {
+  display: grid;
+  grid-template-columns: 68px 16px;
+  align-items: center;
+  gap: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.mainChatContainer {
+  width: 472px;
+  height: 100%;
+  padding: 25px;
+  padding-bottom: 0px;
+  overflow-y: scroll;
+}
+
+.mainChatContainer::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+
+.mainChatContainer::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: #90db93; /* 스크롤바의 색상 */
+
+  border-radius: 10px;
+}
+
+.mainChatContainer::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
+}
+
+.chatHr {
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #bdbcbc;
+}
+
+.day {
+  position: relative;
+  text-align: center;
+  background-color: white;
+  width: 140px;
+  top: -8.5px;
+  left: 50%;
+  font-size: 0.6rem;
+  color: #7d7979;
+  font-weight: 556px;
+  transform: translateX(-50%);
+}
+
+.selectedChatContainer {
+  background-color: #ededed;
+  transition: all 0.4s ease-in-out;
+}
+
+.me {
+  width: fit-content;
+  max-width: 210px;
+  height: fit-content;
+  font-size: 1rem;
+  padding: 12px;
+  /* padding: 10px 10px; */
+  background-color: #42b750;
+  color: #fff;
+  /* border-radius: 10px; */
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  float: right;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.otherImg {
+  display: grid;
+  grid-template-columns: 40px 200px;
+}
+
+.other {
+  width: fit-content;
+  max-width: 210px;
+  height: fit-content;
+  font-size: 1rem;
+  padding: 12px;
+  margin-left: 15px;
+  /* padding: 10px 10px; */
+  background-color: #e7e7e7;
+  color: #000;
+  /* border-radius: 10px; */
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  /* float: right; */
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.chatBoxContainer {
+  padding: 10px 20px;
+  padding-top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.chatBox {
+  width: 100%;
+  height: 100%;
+  border: #a5a9ae 3px solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.chatMassageBox {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 70px;
+  resize: none;
+  /* align-items: top; */
+  /* text-align: left; */
+}
+
+.chatMassageBox::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+
+.chatMassageBox::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: #90db93; /* 스크롤바의 색상 */
+
+  border-radius: 10px;
+}
+
+.chatMassageBox::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
+}
+
+.chatBoxBottom {
+  display: grid;
+  grid-template-columns: 16px 16px 16px 342px;
+  gap: 8px;
+  align-items: center;
+}
+
+.chatBoxBtn {
+  text-align: center;
+  width: 40px;
+  height: fit-content;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+  font-weight: 800;
+  color: #fff;
+  position: relative;
+  left: 303px;
+  transition: all 0.4s ease-in-out;
+}
+
+.chatBoxBtnShow {
+  color: #545151;
+  background-color: #90db93;
+  transition: all 0.4s ease-in-out;
+}

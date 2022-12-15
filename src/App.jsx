@@ -18,6 +18,12 @@ import { pageAtom } from './components/Header';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+// import Scrollbar from 'smooth-scrollbar';
+
+// smooth scroll 설정
+// scrollbar.init(document.querySelector('#smooth-scroll'));
+// Scrollbar.init(document.querySelector('#mainContainer'));
+
 const Page_1 = function Page_1() {
   const [selectedPage, setSelectedPage] = useAtom(pageAtom);
   setSelectedPage(-1);
@@ -122,7 +128,16 @@ function App() {
               </div>
             }
           />
-          <Route path="/chat" element={<Chat />} />
+          <Route
+            path="/chat"
+            element={
+              <div style={{ width: '1000px' }}>
+                <Page_1 />
+                <Header hideMenu="hide" />
+                <Chat />
+              </div>
+            }
+          />
           <Route
             path="/adopt/kokatoo"
             element={
