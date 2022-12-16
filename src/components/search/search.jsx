@@ -11,7 +11,10 @@ export const searchAtom = atom({
 });
 
 export default function Search() {
-  const [state, setstate] = useAtom(searchAtom);
+  const [state, setstate] = useState({
+    query: '',
+    list: [],
+  }); //useAtom(searchAtom);
   const handleChange = (e) => {
     const results = posts.filter((post) => {
       if (e.target.value === '') return posts;
