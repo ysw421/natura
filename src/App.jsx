@@ -174,7 +174,7 @@ function App() {
             element={
               <div style={{ width: '1000px' }}>
                 <Page0 />
-                <KokatooStart />
+                {/* <KokatooStart /> */}
                 <Header />
                 <Kokatoo />
               </div>

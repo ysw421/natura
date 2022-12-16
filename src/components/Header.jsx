@@ -67,7 +67,7 @@ function Header(prop) {
   return (
     // <BrowserRouter>/
     <>
-      <div className={`${HeaderStyle.whiteMenuBar} ${prop.hideMenu === 'hide' && HeaderStyle.hideMenuClass}`}></div>
+      {/* <div className={`${HeaderStyle.whiteMenuBar} ${prop.hideMenu === 'hide' && HeaderStyle.hideMenuClass}`}></div> */}
       <header className={`${HeaderStyle.header}`}>
         <div className={HeaderStyle.headerSearch}>
           {/* <Link to='/' className={HeaderStyle.linktoMain}> */}
