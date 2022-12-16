@@ -6,6 +6,14 @@
       "rewrite": "/index.html"
     },
     {
+      "route": "/donation/dog",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/adoptionForm",
+      "rewrite": "/index.html"
+    },
+    {
       "route": "/aboutus/",
       "rewrite": "/index.html"
     },
