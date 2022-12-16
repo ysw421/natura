@@ -15,7 +15,7 @@ function DonationBody() {
         <div>
           {donationImg.map((item) => (
             <div className={DonationBodyStyle.contentBorder} key={item.id}>
-              <a href="#">
+              <a href="/donation/dog">
                 <img src={item.img} />
                 <div className={DonationBodyStyle.content}>
                   <div className={DonationBodyStyle.imgTitle}>{item.title}</div>

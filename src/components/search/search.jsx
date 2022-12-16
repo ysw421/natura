@@ -3,12 +3,15 @@ import searchStyle from './search.module.css';
 import searchIcon from '../../Logo/SearchIcon.png';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { atom, useAtom } from 'jotai';
+
+export const searchAtom = atom({
+  query: '',
+  list: [],
+});
 
 export default function Search() {
-  const [state, setstate] = useState({
-    query: '',
-    list: [],
-  });
+  const [state, setstate] = useAtom(searchAtom);
   const handleChange = (e) => {
     const results = posts.filter((post) => {
       if (e.target.value === '') return posts;
