@@ -12,9 +12,14 @@ import Community from './community/communityMain';
 import Chat from './chat/chatMain';
 import Kokatoo from './adoptionPosts/kokatoo';
 import NaturaHouse from './adoptionPosts/NaturaHouse';
+import AdoptionForm from './adopt/form';
+//thank you
+import Form from './adopt/form';
+import Dog from './donations/dog';
 // import {RemoveScroll} from 'react-remove-scroll';
 import { atom, useAtom } from 'jotai';
 import { pageAtom } from './components/Header';
+import { searchAtom } from './components/search/search';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -53,6 +58,22 @@ const Page3 = function Page3() {
   setSelectedPage(3);
   return <></>;
 };
+const Page4 = function Page4() {
+  const [selectedPage, setSelectedPage] = useAtom(pageAtom);
+  setSelectedPage(4);
+  return <></>;
+};
+
+const KokatooStart = function KokatooStart() {
+  // const [selectedPage, setSelectedPage] = useAtom(pageAtom);
+  // setSelectedPage(5);
+  const [state, setstate] = useAtom(searchAtom);
+  setstate({
+    query: '',
+    list: [],
+  });
+  return <></>;
+};
 
 function App() {
   const [selectedPage, setSelectedPage] = useAtom(pageAtom);
@@ -87,6 +108,16 @@ function App() {
               <div style={{ width: '1000px' }}>
                 <Page2 />
                 <Donation />
+              </div>
+            }
+          />
+          <Route
+            path="/donation/dog"
+            element={
+              <div style={{ width: '1000px' }}>
+                <Page2 />
+                <Header />
+                <Dog />
               </div>
             }
           />
@@ -143,6 +174,7 @@ function App() {
             element={
               <div style={{ width: '1000px' }}>
                 <Page0 />
+                <KokatooStart />
                 <Header />
                 <Kokatoo />
               </div>
@@ -156,6 +188,16 @@ function App() {
                 <Page0 />
                 <Header />
                 <NaturaHouse />
+              </div>
+            }
+          />
+          <Route
+            path="/adoptionForm"
+            element={
+              <div style={{ width: '1000px' }}>
+                <Page0 />
+                <Header />
+                <AdoptionForm />
               </div>
             }
           />

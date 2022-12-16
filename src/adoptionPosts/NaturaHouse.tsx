@@ -11,6 +11,7 @@ import ContentImg02 from './ContentImg02.png';
 import ContentImg03 from './ContentImg03.png';
 import ContentImg04 from './ContentImg04.png';
 import Slider from 'react-slick';
+// import { Link } from 'react-router-dom';
 
 function NaturaHouse() {
   const shoplist = [
@@ -112,7 +113,9 @@ function NaturaHouse() {
         ))}
       </div>
       <div id={Style.btnContainer}>
-        <button className={Style.adoptionbtn}>분양하러 가기</button>
+        <Link to="/adoptionForm">
+          <button className={Style.adoptionbtn}>분양하러 가기</button>
+        </Link>
       </div>
       <hr className={Style.shorthr}></hr>
       <div className={Style.productList}>

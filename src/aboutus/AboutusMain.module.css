@@ -127,6 +127,7 @@
   top: 500px;
   left: -434px;
   margin: 0;
+  z-index: -1;
 }
 
 #i5 {

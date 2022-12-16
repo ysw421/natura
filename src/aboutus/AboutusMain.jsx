@@ -219,7 +219,7 @@ function AboutusMain() {
               },
             ]}
           >
-            <p id={AboutUsMainStyle.t4}>Survice</p>
+            <p id={AboutUsMainStyle.t4}>Service</p>
           </Plx>
           <Plx
             parallaxData={[
@@ -312,13 +312,163 @@ function AboutusMain() {
               <img src="/images/aboutus/i4.png" alt="i4" id={AboutUsMainStyle.i4} />
             </Plx>
           </div>
-          <p id={AboutUsMainStyle.t6}>특수 동물의 분양 절차를 알고 계신가요?</p>
-          <img src="/images/aboutus/i5.png" alt="images" id={AboutUsMainStyle.i5} />
-          <img src="/images/aboutus/i6.png" alt="images" id={AboutUsMainStyle.i6} />
-          <img src="/images/aboutus/i8.png" alt="images" id={AboutUsMainStyle.i8} />
-          <img src="/images/aboutus/i5.png" alt="images" id={AboutUsMainStyle.i7} />
-          <img src="/images/aboutus/i9.png" alt="images" id={AboutUsMainStyle.i9} />
-          <p id={AboutUsMainStyle.t7}>Vison</p>
+          <Plx
+            parallaxData={[
+              {
+                startOffset: '2400px',
+                endOffset: '2800px',
+                start: 0,
+                end: 50,
+                easing: 'ease-in',
+                properties: [
+                  {
+                    startValue: 0,
+                    endValue: 1,
+                    property: 'opacity',
+                  },
+                  {
+                    startValue: -60,
+                    endValue: 0,
+                    property: 'translateY',
+                    unit: '%',
+                  },
+                ],
+              },
+            ]}
+          >
+            <p id={AboutUsMainStyle.t6}>특수 동물의 분양 절차를 알고 계신가요?</p>
+          </Plx>
+          <Plx
+            parallaxData={[
+              {
+                startOffset: '2400px',
+                endOffset: '2800px',
+                start: 0,
+                end: 50,
+                easing: 'ease-in',
+                properties: [
+                  {
+                    startValue: 0,
+                    endValue: 1,
+                    property: 'opacity',
+                  },
+                  {
+                    startValue: -20,
+                    endValue: 0,
+                    property: 'translateX',
+                    unit: '%',
+                  },
+                ],
+              },
+            ]}
+          >
+            <img src="/images/aboutus/i5.png" alt="images" id={AboutUsMainStyle.i5} />
+          </Plx>
+          <Plx
+            parallaxData={[
+              {
+                startOffset: '2400px',
+                endOffset: '2800px',
+                start: 0,
+                end: 50,
+                easing: 'ease-in',
+                properties: [
+                  {
+                    startValue: 0,
+                    endValue: 1,
+                    property: 'opacity',
+                  },
+                  {
+                    startValue: 20,
+                    endValue: 0,
+                    property: 'translateX',
+                    unit: '%',
+                  },
+                ],
+              },
+            ]}
+          >
+            <img src="/images/aboutus/i6.png" alt="images" id={AboutUsMainStyle.i6} />
+          </Plx>
+          <Plx
+            parallaxData={[
+              {
+                startOffset: '2600px',
+                endOffset: '3200px',
+                start: 0,
+                end: 50,
+                easing: 'ease-in',
+                properties: [
+                  {
+                    startValue: 0,
+                    endValue: 1,
+                    property: 'opacity',
+                  },
+                  {
+                    startValue: -60,
+                    endValue: 0,
+                    property: 'translateX',
+                    unit: '%',
+                  },
+                ],
+              },
+            ]}
+          >
+            <img src="/images/aboutus/i8.png" alt="images" id={AboutUsMainStyle.i8} />
+          </Plx>
+          <Plx
+            parallaxData={[
+              {
+                startOffset: '2700px',
+                endOffset: '3200px',
+                start: 0,
+                end: 50,
+                easing: 'ease-in',
+                properties: [
+                  {
+                    startValue: 0,
+                    endValue: 1,
+                    property: 'opacity',
+                  },
+                  {
+                    startValue: -30,
+                    endValue: 0,
+                    property: 'translateX',
+                    unit: '%',
+                  },
+                ],
+              },
+            ]}
+          >
+            <img src="/images/aboutus/i5.png" alt="images" id={AboutUsMainStyle.i7} />
+          </Plx>
+          <Plx
+            parallaxData={[
+              {
+                startOffset: '2700px',
+                endOffset: '3200px',
+                start: 0,
+                end: 50,
+                easing: 'ease-in',
+                properties: [
+                  {
+                    startValue: 0,
+                    endValue: 1,
+                    property: 'opacity',
+                  },
+                  {
+                    startValue: 30,
+                    endValue: 0,
+                    property: 'translateX',
+                    unit: '%',
+                  },
+                ],
+              },
+            ]}
+          >
+            <img src="/images/aboutus/i9.png" alt="images" id={AboutUsMainStyle.i9} />
+          </Plx>
+          <p id={AboutUsMainStyle.t7}>Vision</p>
           <p id={AboutUsMainStyle.t8}>나뚜라가 혁신하는 가치</p>
           <img src="/images/aboutus/i10.png" alt="images" id={AboutUsMainStyle.i10} />
           <p id={AboutUsMainStyle.t9}>
